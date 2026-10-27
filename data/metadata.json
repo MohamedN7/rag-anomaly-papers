@@ -1,0 +1,481 @@
+{
+  "2510.18998v1": {
+    "title": "An Encode-then-Decompose Approach to Unsupervised Time Series Anomaly Detection on Contaminated Training Data--Extended Version",
+    "authors": [
+      "Buang Zhang",
+      "Tung Kieu",
+      "Xiangfei Qiu",
+      "Chenjuan Guo",
+      "Jilin Hu",
+      "Aoying Zhou",
+      "Christian S. Jensen",
+      "Bin Yang"
+    ],
+    "year": 2025,
+    "url": "http://arxiv.org/abs/2510.18998v1"
+  },
+  "2112.14436v1": {
+    "title": "Monte Carlo EM for Deep Time Series Anomaly Detection",
+    "authors": [
+      "Fran\u00e7ois-Xavier Aubet",
+      "Daniel Z\u00fcgner",
+      "Jan Gasthaus"
+    ],
+    "year": 2021,
+    "url": "http://arxiv.org/abs/2112.14436v1"
+  },
+  "2412.19286v1": {
+    "title": "Time Series Foundational Models: Their Role in Anomaly Detection and Prediction",
+    "authors": [
+      "Chathurangi Shyalika",
+      "Harleen Kaur Bagga",
+      "Ahan Bhatt",
+      "Renjith Prasad",
+      "Alaa Al Ghazo",
+      "Amit Sheth"
+    ],
+    "year": 2024,
+    "url": "http://arxiv.org/abs/2412.19286v1"
+  },
+  "1610.06761v1": {
+    "title": "Maximally Divergent Intervals for Anomaly Detection",
+    "authors": [
+      "Erik Rodner",
+      "Bj\u00f6rn Barz",
+      "Yanira Guanche",
+      "Milan Flach",
+      "Miguel Mahecha",
+      "Paul Bodesheim",
+      "Markus Reichstein",
+      "Joachim Denzler"
+    ],
+    "year": 2016,
+    "url": "http://arxiv.org/abs/1610.06761v1"
+  },
+  "1602.07109v5": {
+    "title": "Variational Inference for On-line Anomaly Detection in High-Dimensional Time Series",
+    "authors": [
+      "Maximilian Soelch",
+      "Justin Bayer",
+      "Marvin Ludersdorfer",
+      "Patrick van der Smagt"
+    ],
+    "year": 2016,
+    "url": "http://arxiv.org/abs/1602.07109v5"
+  },
+  "2002.09545v2": {
+    "title": "RobustTAD: Robust Time Series Anomaly Detection via Decomposition and Convolutional Neural Networks",
+    "authors": [
+      "Jingkun Gao",
+      "Xiaomin Song",
+      "Qingsong Wen",
+      "Pichao Wang",
+      "Liang Sun",
+      "Huan Xu"
+    ],
+    "year": 2020,
+    "url": "http://arxiv.org/abs/2002.09545v2"
+  },
+  "2010.09353v2": {
+    "title": "anomaly : Detection of Anomalous Structure in Time Series Data",
+    "authors": [
+      "Alex Fisch",
+      "Daniel Grose",
+      "Idris A. Eckley",
+      "Paul Fearnhead",
+      "Lawrence Bardwell"
+    ],
+    "year": 2020,
+    "url": "http://arxiv.org/abs/2010.09353v2"
+  },
+  "2410.12830v3": {
+    "title": "Incorporating Metabolic Information into LLMs for Anomaly Detection in Clinical Time-Series",
+    "authors": [
+      "Maxx Richard Rahman",
+      "Ruoxuan Liu",
+      "Wolfgang Maass"
+    ],
+    "year": 2024,
+    "url": "http://arxiv.org/abs/2410.12830v3"
+  },
+  "2007.14254v1": {
+    "title": "Improving Robustness on Seasonality-Heavy Multivariate Time Series Anomaly Detection",
+    "authors": [
+      "Farzaneh Khoshnevisan",
+      "Zhewen Fan",
+      "Vitor R. Carvalho"
+    ],
+    "year": 2020,
+    "url": "http://arxiv.org/abs/2007.14254v1"
+  },
+  "2111.11108v1": {
+    "title": "Unsupervised Time Series Outlier Detection with Diversity-Driven Convolutional Ensembles -- Extended Version",
+    "authors": [
+      "David Campos",
+      "Tung Kieu",
+      "Chenjuan Guo",
+      "Feiteng Huang",
+      "Kai Zheng",
+      "Bin Yang",
+      "Christian S. Jensen"
+    ],
+    "year": 2021,
+    "url": "http://arxiv.org/abs/2111.11108v1"
+  },
+  "1607.00148v2": {
+    "title": "LSTM-based Encoder-Decoder for Multi-sensor Anomaly Detection",
+    "authors": [
+      "Pankaj Malhotra",
+      "Anusha Ramakrishnan",
+      "Gaurangi Anand",
+      "Lovekesh Vig",
+      "Puneet Agarwal",
+      "Gautam Shroff"
+    ],
+    "year": 2016,
+    "url": "http://arxiv.org/abs/1607.00148v2"
+  },
+  "2008.09567v2": {
+    "title": "TAnoGAN: Time Series Anomaly Detection with Generative Adversarial Networks",
+    "authors": [
+      "Md Abul Bashar",
+      "Richi Nayak"
+    ],
+    "year": 2020,
+    "url": "http://arxiv.org/abs/2008.09567v2"
+  },
+  "2501.07172v1": {
+    "title": "Anomalous Agreement: How to find the Ideal Number of Anomaly Classes in Correlated, Multivariate Time Series Data",
+    "authors": [
+      "Ferdinand Rewicki",
+      "Joachim Denzler",
+      "Julia Niebling"
+    ],
+    "year": 2025,
+    "url": "http://arxiv.org/abs/2501.07172v1"
+  },
+  "2205.09924v1": {
+    "title": "Anomaly Detection for Multivariate Time Series on Large-scale Fluid Handling Plant Using Two-stage Autoencoder",
+    "authors": [
+      "Susumu Naito",
+      "Yasunori Taguchi",
+      "Kouta Nakata",
+      "Yuichi Kato"
+    ],
+    "year": 2022,
+    "url": "http://arxiv.org/abs/2205.09924v1"
+  },
+  "2312.09478v2": {
+    "title": "Entropy Causal Graphs for Multivariate Time Series Anomaly Detection",
+    "authors": [
+      "Falih Gozi Febrinanto",
+      "Kristen Moore",
+      "Chandra Thapa",
+      "Mujie Liu",
+      "Vidya Saikrishna",
+      "Jiangang Ma",
+      "Feng Xia"
+    ],
+    "year": 2023,
+    "url": "http://arxiv.org/abs/2312.09478v2"
+  },
+  "2511.08072v1": {
+    "title": "Clustering-based Anomaly Detection in Multivariate Time Series Data",
+    "authors": [
+      "Jinbo Li",
+      "Hesam Izakian",
+      "Witold Pedrycz",
+      "Iqbal Jamal"
+    ],
+    "year": 2025,
+    "url": "http://arxiv.org/abs/2511.08072v1"
+  },
+  "2305.16509v1": {
+    "title": "RoLA: A Real-Time Online Lightweight Anomaly Detection System for Multivariate Time Series",
+    "authors": [
+      "Ming-Chang Lee",
+      "Jia-Chun Lin"
+    ],
+    "year": 2023,
+    "url": "http://arxiv.org/abs/2305.16509v1"
+  },
+  "2109.11428v1": {
+    "title": "An Evaluation of Anomaly Detection and Diagnosis in Multivariate Time Series",
+    "authors": [
+      "Astha Garg",
+      "Wenyu Zhang",
+      "Jules Samaran",
+      "Savitha Ramasamy",
+      "Chuan-Sheng Foo"
+    ],
+    "year": 2021,
+    "url": "http://arxiv.org/abs/2109.11428v1"
+  },
+  "2208.02108v3": {
+    "title": "Detecting Multivariate Time Series Anomalies with Zero Known Label",
+    "authors": [
+      "Qihang Zhou",
+      "Jiming Chen",
+      "Haoyu Liu",
+      "Shibo He",
+      "Wenchao Meng"
+    ],
+    "year": 2022,
+    "url": "http://arxiv.org/abs/2208.02108v3"
+  },
+  "2606.02670v4": {
+    "title": "Anomalies in Multivariate Time Series Benchmarks Are Mostly Univariate",
+    "authors": [
+      "Marc Pinet",
+      "Julien Cumin",
+      "Samuel Berlemont",
+      "Dominique Vaufreydaz"
+    ],
+    "year": 2026,
+    "url": "http://arxiv.org/abs/2606.02670v4"
+  },
+  "2509.04449v3": {
+    "title": "ChronoGraph: A Real-World Graph-Based Multivariate Time Series Dataset",
+    "authors": [
+      "Adrian Catalin Lutu",
+      "Ioana Pintilie",
+      "Elena Burceanu",
+      "Andrei Manolache"
+    ],
+    "year": 2025,
+    "url": "http://arxiv.org/abs/2509.04449v3"
+  },
+  "2106.06167v1": {
+    "title": "HIFI: Anomaly Detection for Multivariate Time Series with High-order Feature Interactions",
+    "authors": [
+      "Liwei Deng",
+      "Xuanhao Chen",
+      "Yan Zhao",
+      "Kai Zheng"
+    ],
+    "year": 2021,
+    "url": "http://arxiv.org/abs/2106.06167v1"
+  },
+  "2310.08800v2": {
+    "title": "DDMT: Denoising Diffusion Mask Transformer Models for Multivariate Time Series Anomaly Detection",
+    "authors": [
+      "Chaocheng Yang",
+      "Tingyin Wang",
+      "Xuanhui Yan"
+    ],
+    "year": 2023,
+    "url": "http://arxiv.org/abs/2310.08800v2"
+  },
+  "2205.04041v1": {
+    "title": "Deep Federated Anomaly Detection for Multivariate Time Series Data",
+    "authors": [
+      "Wei Zhu",
+      "Dongjin Song",
+      "Yuncong Chen",
+      "Wei Cheng",
+      "Bo Zong",
+      "Takehiko Mizoguchi",
+      "Cristian Lumezanu",
+      "Haifeng Chen",
+      "Jiebo Luo"
+    ],
+    "year": 2022,
+    "url": "http://arxiv.org/abs/2205.04041v1"
+  },
+  "2112.04704v1": {
+    "title": "Ymir: A Supervised Ensemble Framework for Multivariate Time Series Anomaly Detection",
+    "authors": [
+      "Zhanxiang Zhao"
+    ],
+    "year": 2021,
+    "url": "http://arxiv.org/abs/2112.04704v1"
+  },
+  "2410.04154v2": {
+    "title": "Applying Quantum Autoencoders for Time Series Anomaly Detection",
+    "authors": [
+      "Robin Frehner",
+      "Kurt Stockinger"
+    ],
+    "year": 2024,
+    "url": "http://arxiv.org/abs/2410.04154v2"
+  },
+  "1907.01702v2": {
+    "title": "VELC: A New Variational AutoEncoder Based Model for Time Series Anomaly Detection",
+    "authors": [
+      "Chunkai Zhang",
+      "Shaocong Li",
+      "Hongye Zhang",
+      "Yingyang Chen"
+    ],
+    "year": 2019,
+    "url": "http://arxiv.org/abs/1907.01702v2"
+  },
+  "2010.06846v1": {
+    "title": "Reconstruct Anomaly to Normal: Adversarial Learned and Latent Vector-constrained Autoencoder for Time-series Anomaly Detection",
+    "authors": [
+      "Chunkai Zhang",
+      "Wei Zuo",
+      "Xuan Wang"
+    ],
+    "year": 2020,
+    "url": "http://arxiv.org/abs/2010.06846v1"
+  },
+  "2504.02999v1": {
+    "title": "Anomaly Detection in Time Series Data Using Reinforcement Learning, Variational Autoencoder, and Active Learning",
+    "authors": [
+      "Bahareh Golchin",
+      "Banafsheh Rekabdar"
+    ],
+    "year": 2025,
+    "url": "http://arxiv.org/abs/2504.02999v1"
+  },
+  "2202.07125v5": {
+    "title": "Transformers in Time Series: A Survey",
+    "authors": [
+      "Qingsong Wen",
+      "Tian Zhou",
+      "Chaoli Zhang",
+      "Weiqi Chen",
+      "Ziqing Ma",
+      "Junchi Yan",
+      "Liang Sun"
+    ],
+    "year": 2022,
+    "url": "http://arxiv.org/abs/2202.07125v5"
+  },
+  "2110.02642v5": {
+    "title": "Anomaly Transformer: Time Series Anomaly Detection with Association Discrepancy",
+    "authors": [
+      "Jiehui Xu",
+      "Haixu Wu",
+      "Jianmin Wang",
+      "Mingsheng Long"
+    ],
+    "year": 2021,
+    "url": "http://arxiv.org/abs/2110.02642v5"
+  },
+  "2303.03611v1": {
+    "title": "TinyAD: Memory-efficient anomaly detection for time series data in Industrial IoT",
+    "authors": [
+      "Yuting Sun",
+      "Tong Chen",
+      "Quoc Viet Hung Nguyen",
+      "Hongzhi Yin"
+    ],
+    "year": 2023,
+    "url": "http://arxiv.org/abs/2303.03611v1"
+  },
+  "2609.13940v1": {
+    "title": "Optimal Transport for Efficient, Unsupervised Anomaly Detection on Industrial Data",
+    "authors": [
+      "Abigail Langbridge",
+      "Fearghal O'Donncha",
+      "James T Rayfield",
+      "Bradley Eck"
+    ],
+    "year": 2026,
+    "url": "http://arxiv.org/abs/2609.13940v1"
+  },
+  "2605.27486v1": {
+    "title": "Federated Learning for Multivariate Time Series Anomaly Detection in Industrial Automation",
+    "authors": [
+      "Khayyam Nosrati",
+      "Martin Uray",
+      "Saverio Messineo",
+      "Olaf Sassnick",
+      "Stefan Huber"
+    ],
+    "year": 2026,
+    "url": "http://arxiv.org/abs/2605.27486v1"
+  },
+  "2204.08159v1": {
+    "title": "Multi-scale Anomaly Detection for Big Time Series of Industrial Sensors",
+    "authors": [
+      "Quan Ding",
+      "Shenghua Liu",
+      "Bin Zhou",
+      "Huawei Shen",
+      "Xueqi Cheng"
+    ],
+    "year": 2022,
+    "url": "http://arxiv.org/abs/2204.08159v1"
+  },
+  "2212.09518v1": {
+    "title": "FedTADBench: Federated Time-Series Anomaly Detection Benchmark",
+    "authors": [
+      "Fanxing Liu",
+      "Cheng Zeng",
+      "Le Zhang",
+      "Yingjie Zhou",
+      "Qing Mu",
+      "Yanru Zhang",
+      "Ling Zhang",
+      "Ce Zhu"
+    ],
+    "year": 2022,
+    "url": "http://arxiv.org/abs/2212.09518v1"
+  },
+  "2601.09701v1": {
+    "title": "Evaluating GAN-LSTM for Smart Meter Anomaly Detection in Power Systems",
+    "authors": [
+      "Fahimeh Orvati Nia",
+      "Shima Salehi",
+      "Joshua Peeples"
+    ],
+    "year": 2026,
+    "url": "http://arxiv.org/abs/2601.09701v1"
+  },
+  "2308.06663v2": {
+    "title": "ALGAN: Time Series Anomaly Detection with Adjusted-LSTM GAN",
+    "authors": [
+      "Md Abul Bashar",
+      "Richi Nayak"
+    ],
+    "year": 2023,
+    "url": "http://arxiv.org/abs/2308.06663v2"
+  },
+  "2602.09690v1": {
+    "title": "Contextual and Seasonal LSTMs for Time Series Anomaly Detection",
+    "authors": [
+      "Lingpei Zhang",
+      "Qingming Li",
+      "Yong Yang",
+      "Jiahao Chen",
+      "Rui Zeng",
+      "Chenyang Lyu",
+      "Shouling Ji"
+    ],
+    "year": 2026,
+    "url": "http://arxiv.org/abs/2602.09690v1"
+  },
+  "2208.14337v1": {
+    "title": "Denoising Architecture for Unsupervised Anomaly Detection in Time-Series",
+    "authors": [
+      "Wadie Skaf",
+      "Tom\u00e1\u0161 Horv\u00e1th"
+    ],
+    "year": 2022,
+    "url": "http://arxiv.org/abs/2208.14337v1"
+  },
+  "1710.09207v1": {
+    "title": "Unsupervised and Semi-supervised Anomaly Detection with LSTM Neural Networks",
+    "authors": [
+      "Tolga Ergen",
+      "Ali Hassan Mirza",
+      "Suleyman Serdar Kozat"
+    ],
+    "year": 2017,
+    "url": "http://arxiv.org/abs/1710.09207v1"
+  },
+  "2005.12005v1": {
+    "title": "Unsupervised Online Anomaly Detection On Irregularly Sampled Or Missing Valued Time-Series Data Using LSTM Networks",
+    "authors": [
+      "Oguzhan Karaahmetoglu",
+      "Fatih Ilhan",
+      "Ismail Balaban",
+      "Suleyman Serdar Kozat"
+    ],
+    "year": 2020,
+    "url": "http://arxiv.org/abs/2005.12005v1"
+  }
+}
