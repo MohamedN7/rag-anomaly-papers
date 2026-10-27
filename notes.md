@@ -154,3 +154,9 @@ SKIP 2404.06832v1 SplatPose & Detect: Pose-Agnostic 3D Anomaly Detection
 OK 2005.12005v1 Unsupervised Online Anomaly Detection On Irregularly Sampled Or Missing Valued Time-Series Data Using LSTM Networks
 
 45 articles retenus
+
+
+
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (3051 > 512). Running this sequence through the model will result in indexing errors
+2364 chunks écrits dans data/chunks_200.json
+tokens par chunk : min 41, médiane 200, max 200
