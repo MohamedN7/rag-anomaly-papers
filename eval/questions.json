@@ -1,0 +1,589 @@
+[
+  {
+    "id": "q01",
+    "type": "precise",
+    "question": "In the Monte Carlo EM paper, how is the latent anomaly indicator modeled?",
+    "answer": "With a Hidden Markov Model with two states: state 0 means the point is normal and state 1 means it is anomalous.",
+    "doc_id": "2112.14436v1",
+    "pages": [
+      2
+    ],
+    "keywords": [
+      "Hidden Markov Model (HMM) with two states"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q02",
+    "type": "precise",
+    "question": "In the Monte Carlo EM paper, how is the anomalous data distribution p- modeled?",
+    "answer": "With a uniform distribution over the domain of the training data, without assuming any prior on the kind of anomalies.",
+    "doc_id": "2112.14436v1",
+    "pages": [
+      2
+    ],
+    "keywords": [
+      "uniform distribution over the domain"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q03",
+    "type": "precise",
+    "question": "Which algorithm does the E-step of the Monte Carlo EM method use to infer the distribution of the anomaly indicator?",
+    "answer": "The standard forward-backward algorithm for HMMs.",
+    "doc_id": "2112.14436v1",
+    "pages": [
+      3
+    ],
+    "keywords": [
+      "forward-backward"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q04",
+    "type": "precise",
+    "question": "What is the key observation behind the association-based criterion of the Anomaly Transformer?",
+    "answer": "Because anomalies are rare, it is very hard for them to build non-trivial associations with the whole series, so their associations concentrate on adjacent time points (adjacent-concentration bias).",
+    "doc_id": "2110.02642v5",
+    "pages": [
+      1
+    ],
+    "keywords": [
+      "rarity of anomalies, it is extremely difficult",
+      "harder for anomalies to build strong",
+      "concentrate on the adjacent time points",
+      "concentrate on their adjacent time points"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q05",
+    "type": "precise",
+    "question": "In the Anomaly Transformer, how are the prior-association and the series-association computed?",
+    "answer": "The prior-association uses a learnable Gaussian kernel (adjacent-concentration inductive bias); the series-association corresponds to the self-attention weights learned from the raw series.",
+    "doc_id": "2110.02642v5",
+    "pages": [
+      2
+    ],
+    "keywords": [
+      "learnable Gaussian kernel",
+      "calculate by the gaussian kernel"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q06",
+    "type": "precise",
+    "question": "How does the LSTM encoder-decoder scheme EncDec-AD detect anomalies in multi-sensor time series?",
+    "answer": "It learns to reconstruct normal time-series behavior and then uses the reconstruction error to detect anomalies.",
+    "doc_id": "1607.00148v2",
+    "pages": [
+      1
+    ],
+    "keywords": [
+      "uses reconstruction error to detect",
+      "reconstruction error at any future",
+      "reconstruction errors are then used"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q07",
+    "type": "precise",
+    "question": "What do the Maximally Divergent Intervals methods maximize to detect anomalous intervals in multivariate time series?",
+    "answer": "The Kullback-Leibler divergence between the data distribution within and outside an interval of the time series.",
+    "doc_id": "1610.06761v1",
+    "pages": [
+      1
+    ],
+    "keywords": [
+      "Kullback-Leibler"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q08",
+    "type": "precise",
+    "question": "What is new in the way the LSTM-based OC-SVM and SVDD anomaly detectors of Ergen et al. are trained?",
+    "answer": "The parameters of the LSTM architecture and of the OC-SVM (or SVDD) algorithm are trained and optimized jointly, which the authors present as a first in the literature.",
+    "doc_id": "1710.09207v1",
+    "pages": [
+      1
+    ],
+    "keywords": [
+      "jointly train",
+      "joint training",
+      "jointly optimize"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q09",
+    "type": "precise",
+    "question": "Which two components does VELC add to the Variational AutoEncoder?",
+    "answer": "A re-Encoder and a Latent Constraint network.",
+    "doc_id": "1907.01702v2",
+    "pages": [
+      1
+    ],
+    "keywords": [
+      "re-Encoder and Latent Constraint",
+      "re-Encoder and the constraint network"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q10",
+    "type": "precise",
+    "question": "What problem does the Adaptive Dynamic Neighbor Mask (ADNM) address in DDMT?",
+    "answer": "It mitigates information leakage between input and output features, which is linked to the Weak Identity Mapping problem during reconstruction.",
+    "doc_id": "2310.08800v2",
+    "pages": [
+      1
+    ],
+    "keywords": [
+      "information leakage"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q11",
+    "type": "precise",
+    "question": "How does CGAD construct the graph structures used for multivariate time series anomaly detection?",
+    "answer": "It uses transfer entropy to build graphs that reveal the causal relationships among the time series.",
+    "doc_id": "2312.09478v2",
+    "pages": [
+      1
+    ],
+    "keywords": [
+      "transfer entropy"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q12",
+    "type": "precise",
+    "question": "What does the encode-then-decompose paradigm do with the encoded representation, and why?",
+    "answer": "It decomposes the encoded representation into stable and auxiliary representations, to be more robust when training on contaminated time series.",
+    "doc_id": "2510.18998v1",
+    "pages": [
+      1
+    ],
+    "keywords": [
+      "stable and auxiliary",
+      "stable representation",
+      "auxiliary representation"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q13",
+    "type": "precise",
+    "question": "According to the study of time series foundational models for anomaly detection, how do they compare with traditional models?",
+    "answer": "Traditional statistical and deep learning models often match or outperform the foundational models, which also require high computational resources.",
+    "doc_id": "2412.19286v1",
+    "pages": [
+      1
+    ],
+    "keywords": [
+      "match or outperform",
+      "outperform TSFM"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q14",
+    "type": "precise",
+    "question": "How does Ymir combine unsupervised and supervised learning for multivariate time series anomaly detection?",
+    "answer": "It ensembles several unsupervised anomaly detection models to extract feature representations, then combines these features with expert labels in a supervised classifier.",
+    "doc_id": "2112.04704v1",
+    "pages": [
+      1
+    ],
+    "keywords": [
+      "supervised classifier"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q15",
+    "type": "precise",
+    "question": "On which hypothesis does MTGFlow rely for unsupervised multivariate time series anomaly detection?",
+    "answer": "That abnormal instances exhibit sparser densities than normal ones.",
+    "doc_id": "2208.02108v3",
+    "pages": [
+      1
+    ],
+    "keywords": [
+      "sparse densities"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q16",
+    "type": "precise",
+    "question": "What is the role of the FedCC mechanism in Fed-ExDNN?",
+    "answer": "A constrained clustering mechanism on the central server that aligns and aggregates the parameters of the local exemplar modules into a unified global exemplar module.",
+    "doc_id": "2205.04041v1",
+    "pages": [
+      1
+    ],
+    "keywords": [
+      "constrained clustering",
+      "align and aggregate"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q17",
+    "type": "precise",
+    "question": "Why do the authors of the multi-scale anomaly detection paper (MissGAN) question the practice of cutting big time series into small pieces?",
+    "answer": "Because such cuts may pollute the inherent semantic segments of the series, like incorrect punctuation in sentences. The paper also notes that sliding-window segmentation can produce pathologically poor results (Keogh et al., 2004).",
+    "doc_id": "2204.08159v1",
+    "pages": [
+      1
+    ],
+    "keywords": [
+      "pollute the inherent semantic segments",
+      "incorrect punctuation",
+      "pathologically poor"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q18",
+    "type": "precise",
+    "question": "On which application is the Metabolism Pathway-driven Prompting (MPP) approach evaluated?",
+    "answer": "Doping detection in sports, focusing on steroid metabolism, using real-world data from athletes.",
+    "doc_id": "2410.12830v3",
+    "pages": [
+      1
+    ],
+    "keywords": [
+      "doping detection"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q19",
+    "type": "precise",
+    "question": "Which two kinds of anomalies can the R package 'anomaly' detect, and which algorithm family does it implement?",
+    "answer": "Point anomalies and collective anomalies, with the Collective And Point Anomaly (CAPA) family of algorithms.",
+    "doc_id": "2010.09353v2",
+    "pages": [
+      1
+    ],
+    "keywords": [
+      "Collective And Point Anomaly",
+      "point and collective anomalies",
+      "collective and point anomalies",
+      "point anomaly, collective anomaly"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q20",
+    "type": "precise",
+    "question": "Which kinds of anomalies do the Contextual and Seasonal LSTMs (CS-LSTMs) aim to detect better than existing methods?",
+    "answer": "Subtle anomalies, in particular small point anomalies and slowly rising anomalies.",
+    "doc_id": "2602.09690v1",
+    "pages": [
+      1
+    ],
+    "keywords": [
+      "slowly rising"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q21",
+    "type": "numeric",
+    "question": "On how many real-world time series datasets is TAnoGAN evaluated?",
+    "answer": "46 real-world time series datasets.",
+    "doc_id": "2008.09567v2",
+    "pages": [
+      1
+    ],
+    "keywords": [
+      "46 real-world",
+      "46 time series datasets"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q22",
+    "type": "numeric",
+    "question": "How many time series does the Yahoo dataset contain in the Monte Carlo EM paper, and how many subsets is it divided into?",
+    "answer": "367 real and synthetic time series, divided into four subsets (A1 to A4).",
+    "doc_id": "2112.14436v1",
+    "pages": [
+      3
+    ],
+    "keywords": [
+      "367 real and synthetic",
+      "four subsets"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q23",
+    "type": "numeric",
+    "question": "On the electricity dataset with injected outliers, what increase in mean absolute error does the Monte Carlo EM method (LAI) show versus normal training?",
+    "answer": "An increase of 0.0146 with the method, versus 0.0542 when training the model normally.",
+    "doc_id": "2112.14436v1",
+    "pages": [
+      4
+    ],
+    "keywords": [
+      "0.0146"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q24",
+    "type": "numeric",
+    "question": "How many past time points does the MLP of the Monte Carlo EM paper take as input?",
+    "answer": "The last 25 points.",
+    "doc_id": "2112.14436v1",
+    "pages": [
+      3
+    ],
+    "keywords": [
+      "last 25 points"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q25",
+    "type": "numeric",
+    "question": "What does the LEAD dataset contain in the GAN-LSTM smart meter study?",
+    "answer": "One year of hourly measurements from 406 buildings.",
+    "doc_id": "2601.09701v1",
+    "pages": [
+      1
+    ],
+    "keywords": [
+      "406 buildings"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q26",
+    "type": "numeric",
+    "question": "By how much can depthwise separable convolutions reduce the model size compared with traditional CNNs in TinyAD?",
+    "answer": "By 50-90%. (Distinct figure in the body: depthwise separable CNNs assisted with TinyAD reduce model size by 3-9 times versus regular CNNs; acceptable as partial.)",
+    "doc_id": "2303.03611v1",
+    "pages": [
+      1
+    ],
+    "keywords": [
+      "50-90%"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q27",
+    "type": "numeric",
+    "question": "On correlated time series, by how much does maximizing SAAI improve the accuracy of finding the true number of anomaly classes compared with the Silhouette Score and X-Means?",
+    "answer": "By 0.23 compared to SSC and by 0.32 compared to X-Means. (The discussion reports other figures, 0.09 and almost 0.17, for a different setting.)",
+    "doc_id": "2501.07172v1",
+    "pages": [
+      1
+    ],
+    "keywords": [
+      "0.23 compared to SSC"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q28",
+    "type": "numeric",
+    "question": "In the quantum autoencoder study, what overlap do the classical autoencoder distributions show on windows fully encompassing the anomalous region, and what do quantum autoencoders trained on real hardware show?",
+    "answer": "About 70% overlap for the classical autoencoder, versus zero overlap for the quantum autoencoders trained on real quantum hardware.",
+    "doc_id": "2410.04154v2",
+    "pages": [
+      18
+    ],
+    "keywords": [
+      "approximately 70%",
+      "exhibit zero overlap"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q29",
+    "type": "multi",
+    "question": "What are the three components modeled in the Monte Carlo EM method, and how is each one modeled?",
+    "answer": "The nominal data model p+ (any probabilistic time series model, a deep probabilistic forecasting model in the experiments), the anomalous data model p- (uniform distribution over the domain of the training data), and the anomaly indicator (a two-state HMM).",
+    "doc_id": "2112.14436v1",
+    "pages": [
+      2
+    ],
+    "keywords": [
+      "Nominal Data Model",
+      "Anomalous Data Model",
+      "Anomaly Indicator Model"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q30",
+    "type": "multi",
+    "question": "In the Monte Carlo EM method, how are anomalous points treated during training (M-step) and at inference time?",
+    "answer": "M-step: samples of the indicator series give points considered normal; anomalous points are treated as missing or imputed with the forecast/reconstruction of the previous M-step. Inference: the HMM filters z; a point more likely anomalous is treated as missing or replaced by a sample or mode of the nominal model.",
+    "doc_id": "2112.14436v1",
+    "pages": [
+      3
+    ],
+    "keywords": [
+      "imputed",
+      "perform filtering on z",
+      "points as missing",
+      "treated as missing"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q31",
+    "type": "multi",
+    "question": "What key observation motivates the Anomaly Transformer and how does the Anomaly-Attention mechanism put it into practice?",
+    "answer": "Anomalies are rare, so their associations concentrate on adjacent time points. Anomaly-Attention has two branches: a prior-association with a learnable Gaussian kernel and a series-association from self-attention weights; their distance is the Association Discrepancy.",
+    "doc_id": "2110.02642v5",
+    "pages": [
+      1,
+      2
+    ],
+    "keywords": [
+      "rarity of anomalies, it is extremely difficult",
+      "harder for anomalies to build strong",
+      "learnable Gaussian kernel",
+      "two-branch"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q32",
+    "type": "multi",
+    "question": "Which two techniques does the quantum autoencoder paper use to classify anomalies, and how do quantum autoencoders trained on real hardware compare with simulated ones?",
+    "answer": "Reconstruction-based analysis and latent representation analysis (implemented as a single Swap Test measurement and input reconstruction with MSE). Despite almost twice the loss values of their simulated counterparts, the hardware-trained quantum autoencoders perform slightly better.",
+    "doc_id": "2410.04154v2",
+    "pages": [
+      1,
+      18
+    ],
+    "keywords": [
+      "latent representation analysis",
+      "two approaches",
+      "Swap Test measurement",
+      "almost twice the loss"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q33",
+    "type": "multi",
+    "question": "Which benchmarks does the paper 'Anomalies in Multivariate Time Series Benchmarks Are Mostly Univariate' evaluate, and what is its main finding?",
+    "answer": "Eight benchmarks: GECCO, MSL, SMAP, PSM, SMD, SWaT, SWAN-SF and WADI. Every cross-channel rupture co-occurs with a univariate deviation, and on six of the eight benchmarks at least half of the labeled anomaly segments deviate univariately on 89% to 100% of their timesteps.",
+    "doc_id": "2606.02670v4",
+    "pages": [
+      1,
+      4
+    ],
+    "keywords": [
+      "GECCO",
+      "no crosschannel rupture",
+      "co-occurs with a univariate deviation",
+      "eight widely used"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q34",
+    "type": "broad",
+    "question": "Which benchmark datasets are commonly used to evaluate multivariate time series anomaly detection across the papers?",
+    "answer": "Reference list (non-exhaustive): SMD, SMAP, MSL, SWaT, WADI and PSM (also GECCO, SWAN-SF, Yahoo). A good answer names several of these and attributes them to specific papers.",
+    "doc_id": null,
+    "pages": [],
+    "keywords": [
+      "SMD",
+      "SMAP",
+      "SWaT"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q35",
+    "type": "broad",
+    "question": "Which papers in the corpus propose GAN-based anomaly detection methods?",
+    "answer": "TAnoGAN (2008.09567), ALGAN (2308.06663), RSM-GAN in the seasonality-heavy robustness paper (2007.14254), MissGAN (2204.08159) and the GAN-LSTM smart meter study (2601.09701). Borderline: RAN (2010.06846), an autoencoder trained adversarially with a discriminator. DDMT only mentions GANs as related work and does not count.",
+    "doc_id": null,
+    "pages": [],
+    "keywords": [
+      "GAN"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q36",
+    "type": "unanswerable",
+    "question": "How does the Mamba state-space architecture perform for time series anomaly detection?",
+    "answer": "Not in the corpus: no paper mentions Mamba.",
+    "doc_id": null,
+    "pages": [],
+    "keywords": [
+      "Mamba"
+    ],
+    "answerable": false
+  },
+  {
+    "id": "q37",
+    "type": "unanswerable",
+    "question": "What results are reported on the TSB-UAD benchmark for univariate anomaly detection?",
+    "answer": "Not in the corpus: TSB-UAD is never mentioned.",
+    "doc_id": null,
+    "pages": [],
+    "keywords": [
+      "TSB-UAD"
+    ],
+    "answerable": false
+  },
+  {
+    "id": "q38",
+    "type": "unanswerable",
+    "question": "How does the DeepAR forecasting model perform when used for anomaly detection?",
+    "answer": "Not in the corpus: DeepAR is never mentioned.",
+    "doc_id": null,
+    "pages": [],
+    "keywords": [
+      "DeepAR"
+    ],
+    "answerable": false
+  },
+  {
+    "id": "q39",
+    "type": "unanswerable",
+    "question": "How do GPT-4 and ChatGPT perform as zero-shot anomaly detectors on time series?",
+    "answer": "Not in the corpus: neither GPT-4 nor ChatGPT is mentioned (edge case: zero-shot is discussed for other models).",
+    "doc_id": null,
+    "pages": [],
+    "keywords": [
+      "GPT-4",
+      "ChatGPT"
+    ],
+    "answerable": false
+  },
+  {
+    "id": "q40",
+    "type": "unanswerable",
+    "question": "How is Kubernetes autoscaling used to deploy anomaly detection services in production?",
+    "answer": "Not in the corpus: Kubernetes is never mentioned.",
+    "doc_id": null,
+    "pages": [],
+    "keywords": [
+      "Kubernetes"
+    ],
+    "answerable": false
+  }
+]

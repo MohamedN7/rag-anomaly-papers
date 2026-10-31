@@ -1,14 +1,32 @@
-import json, glob, bisect, statistics
+"""Découpe les articles nettoyés (data/texts/*.json) en chunks.
+
+Exemples :
+    python src/chunk.py                                  # référence : 200 tokens, 40 de chevauchement, MiniLM
+    python src/chunk.py --size 128 --overlap 32
+    python src/chunk.py --size 400 --overlap 80 --model bge-small
+"""
+import argparse, json, glob, bisect, statistics
 from transformers import AutoTokenizer
+from rag_config import MODELS, MAX_SEQ, add_config_args, config_from_args, config_name, paths
 
-CHUNK_TOKENS = 200   # taille d'un chunk, en tokens
-OVERLAP = 40         # tokens partagés entre deux chunks consécutifs
-MIN_TOKENS = 30      # on ignore les chunks trop courts
-MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+parser = argparse.ArgumentParser()
+add_config_args(parser)
+args = parser.parse_args()
+cfg = config_from_args(args)
 
-# On utilise le tokenizer du modèle d'embeddings : on compte donc
-# les tokens exactement comme lui.
-tokenizer = AutoTokenizer.from_pretrained(MODEL)
+CHUNK_TOKENS = cfg["size"]
+OVERLAP = cfg["overlap"]
+MIN_TOKENS = 30          # on ignore les chunks trop courts
+MAX_DIGIT_RATIO = 0.15   # filtre des chunks surtout numériques (tableaux, figures)
+
+if OVERLAP >= CHUNK_TOKENS:
+    raise SystemExit("Le chevauchement doit être plus petit que la taille du chunk.")
+if CHUNK_TOKENS + 2 > MAX_SEQ[cfg["model"]]:
+    raise SystemExit(f"{CHUNK_TOKENS} tokens + 2 tokens spéciaux dépassent la limite de "
+                     f"{MAX_SEQ[cfg['model']]} du modèle {cfg['model']}.")
+
+# Tokenizer du modèle d'embeddings : on compte les tokens exactement comme lui.
+tokenizer = AutoTokenizer.from_pretrained(MODELS[cfg["model"]])
 
 
 def chunk_document(doc):
@@ -56,38 +74,25 @@ def chunk_document(doc):
     return chunks
 
 
+def digit_ratio(text):
+    return sum(c.isdigit() for c in text) / max(len(text), 1)
+
+
 all_chunks = []
 for path in sorted(glob.glob("data/texts/*.json")):
     with open(path, encoding="utf-8") as f:
         doc = json.load(f)
     all_chunks.extend(chunk_document(doc))
 
-# ===== COLLE ICI le bloc du filtre =====
-def digit_ratio(text):
-    return sum(c.isdigit() for c in text) / max(len(text), 1)
-
-# 1. Mesure : combien de chunks seraient écartés selon le seuil ?
-for t in [0.10, 0.15, 0.20, 0.30]:
-    n_drop = sum(digit_ratio(c["text"]) > t for c in all_chunks)
-    print(f"seuil {t:.2f} : {n_drop} chunks écartés sur {len(all_chunks)}")
-
-# 2. Filtrage
-MAX_DIGIT_RATIO = 0.15
-dropped = [c for c in all_chunks if digit_ratio(c["text"]) > MAX_DIGIT_RATIO]
+n_before = len(all_chunks)
 all_chunks = [c for c in all_chunks if digit_ratio(c["text"]) <= MAX_DIGIT_RATIO]
-print(f"{len(dropped)} chunks écartés, {len(all_chunks)} gardés")
 
-# 3. Contrôle visuel : 3 chunks écartés
-for c in dropped[:3]:
-    print("=" * 60)
-    print("ÉCARTÉ", c["chunk_id"], round(digit_ratio(c["text"]), 2))
-    print(c["text"][:300])
-# ===== FIN du bloc =====
-
-out_path = f"data/chunks_{CHUNK_TOKENS}.json"
+out_path, _ = paths(cfg)
 with open(out_path, "w", encoding="utf-8") as f:
     json.dump(all_chunks, f, ensure_ascii=False, indent=2)
 
 sizes = [c["n_tokens"] for c in all_chunks]
+print(f"Configuration : {config_name(cfg)}")
+print(f"{n_before} chunks avant filtre, {n_before - len(all_chunks)} écartés (chiffres > {MAX_DIGIT_RATIO:.0%})")
 print(f"{len(all_chunks)} chunks écrits dans {out_path}")
 print(f"tokens par chunk : min {min(sizes)}, médiane {statistics.median(sizes):.0f}, max {max(sizes)}")

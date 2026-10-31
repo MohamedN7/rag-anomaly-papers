@@ -1,0 +1,8 @@
+.venv/
+.git/
+__pycache__/
+data/pdfs/
+data/texts/
+eval/
+*.csv
+notes.md

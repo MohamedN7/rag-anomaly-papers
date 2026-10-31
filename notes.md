@@ -160,3 +160,14 @@ OK 2005.12005v1 Unsupervised Online Anomaly Detection On Irregularly Sampled Or 
 [transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (3051 > 512). Running this sequence through the model will result in indexing errors
 2364 chunks écrits dans data/chunks_200.json
 tokens par chunk : min 41, médiane 200, max 200
+
+
+## Premier test du retrieval (k=5, MiniLM, chunks 200/40)
+- Questions ciblées : le bon article remonte (3-4 résultats sur 5)
+- Chunk de bruit en tête sur Q2 (URL de notes de bas de page)
+- Question large (datasets) : aucun résultat ne liste de datasets, scores pourtant élevés
+- Le score ne se compare pas d'une question à l'autre
+
+- Q3 (datasets) : UCR/UCI/KDD99 présents dans le passage VELC seulement (UCR aussi dans RAN).
+  Le modèle a attribué la liste à FedTADBench et Ymir sans support : erreur d'attribution,
+  pas d'invention. Aucune citation dans la réponse.
